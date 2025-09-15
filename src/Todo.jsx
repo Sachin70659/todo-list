@@ -61,7 +61,11 @@ export default function Todo() {
               {/* Task text */}
               <span
                 className={`flex-1 text-lg sm:text-xl transition
-                  ${todo.completed ? "text-green-600 line-through" : "text-gray-800"}
+                  ${
+                    todo.completed
+                      ? "text-green-600 line-through"
+                      : "text-gray-800"
+                  }
                 `}
               >
                 {todo.text}
@@ -88,7 +92,11 @@ export default function Todo() {
                     stroke="currentColor"
                     className="w-5 h-5 sm:w-6 sm:h-6"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M5 13l4 4L19 7"
+                    />
                   </svg>
                 </button>
 
