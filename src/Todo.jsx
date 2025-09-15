@@ -8,6 +8,7 @@ export default function Todo() {
     if (text.trim() !== "") {
       setTodos([...todos, { id: Date.now(), text, completed: false }]);
       setText("");
+      console.log("Todo added:", text); // Debugging line
     }
   };
 
